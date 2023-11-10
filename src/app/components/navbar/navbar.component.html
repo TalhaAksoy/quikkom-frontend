@@ -1,0 +1,33 @@
+<nav class="border-b-2 w-full border-black flex flex-col justify-center items-center">
+    <div class="sm:w-11/12 w-full flex justify-between items-center">
+        <span class="w-14 h-14 text-black flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5l8.84 3.15l-1.34 11.7L12 21.5l-7.5-4.15l-1.34-11.7L12 2.5m0 2.1L6.47 17h2.06l1.11-2.78h4.7L15.45 17h2.05L12 4.6m1.62 7.9h-3.23L12 8.63l1.62 3.87Z"/></svg>
+        </span>
+        <div
+        class="flex items-center h-8 border-2 rounded-md p-2 gap-x-2 focus:bg-blue-500 sm:w-auto w-1/3"
+        (click)="handleInput()"
+        [ngClass]="input ? 'bg-gray-100' :''">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.612 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16Zm0-2q1.875 0 3.188-1.313T14 9.5q0-1.875-1.313-3.188T9.5 5Q7.625 5 6.312 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14Z"/></svg>
+            <input type="search" name="" id="" class="outline-none bg-transparent sm:w-auto w-3/4" placeholder="Search">
+        </div>
+        <div class="flex justify-center items-center gap-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M16 6V4H8v2M7 18c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2m10 0c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2m-9.8-3.2v-.1l.9-1.7h7.4c.7 0 1.4-.4 1.7-1l3.9-7l-1.7-1l-3.9 7h-7L4.3 2H1v2h2l3.6 7.6L5.2 14c-.1.3-.2.6-.2 1c0 1.1.9 2 2 2h12v-2H7.4c-.1 0-.2-.1-.2-.2Z"/></svg>
+            <img src="https://api.dicebear.com/7.x/lorelei/png?seed=Salem" alt="avatar" class="w-14 h-14 bg-cover bg-center">
+        </div>
+    </div>
+    <hr class="sm:w-11/12 w-full">
+    <div class="sm:hidden w-full flex justify-center items-center">
+        <button>See All Categories</button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10.5 16.3q-.2 0-.35-.138T10 15.8V8.2q0-.225.15-.362t.35-.138q.05 0 .35.15l3.625 3.625q.125.125.175.25t.05.275q0 .15-.05.275t-.175.25L10.85 16.15q-.075.075-.162.113t-.188.037Z"/></svg>
+    </div>
+    <div class="sm:w-11/12 w-full sm:flex hidden justify-start items-center">
+        <ul class="flex flex-1 justify-between">
+            <li *ngFor="let categorie of categoriesArray" class="hover:cursor-pointer select-none">
+                {{categorie}}
+            </li>
+        </ul>
+        <span class="w-28 flex justify-center">
+            <svg class="hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 7a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1z"/></svg>
+        </span>
+    </div>
+</nav>
