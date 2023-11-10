@@ -1,5 +1,15 @@
 # quikkom-frontend
 
-This repository contains Angular frontend code of Quikkom project.
+This repository contains Angular frontend service of Quikkom project.
 
-Clone repo : git clone --depth 1 https://github.com/TalhaAksoy/quikkom-frontend.git
+## Run
+
+TODO: Instructions to run the project
+
+## Build
+
+TODO: Instructions to build the project
+
+## Docker Image
+
+TODO: Instructions to build Docker image
